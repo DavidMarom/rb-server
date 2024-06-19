@@ -20,4 +20,7 @@ io.on('connection', (socket) => {
     });
 });
 
+app.get('/isAlive', (req, res) => { res.send('Server is alive'); });
+
+
 server.listen(3001, () => { console.log('listening on *:3001') });
